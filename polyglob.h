@@ -3,8 +3,8 @@
 //           me@georgeflanagin.com
 //---
 
-#ifndef POLYGLOB_INCLUDED
-#define POLYGLOB_INCLUDED
+#ifndef _POLYGLOB_INCLUDED_
+#define _POLYGLOB_INCLUDED_
 
 #include <string>
 #include <vector>
@@ -13,7 +13,7 @@
 using namespace std;
 
 // externally callable, non-C++ interface.
-extern "C" { 
+extern "C" {
   void identifyLanguage (const char *shred, char ** pLangID);
 }
 
@@ -31,7 +31,7 @@ struct polyGLOBobj
 class polyGLOB
 {
   public:
-    polyGLOB(void) : m_error(0) { } 
+    polyGLOB(void) : m_error(0) { }
     ~polyGLOB(void) { }
 
     // for general use, the functor will do.
